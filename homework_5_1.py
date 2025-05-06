@@ -5,6 +5,6 @@ name = input("Enter your word: ")
 
 # Перевірка: чи це коректне ім’я змінної
 if name.isidentifier() and not keyword.iskeyword(name):
-    print("Good. You can work with it.")
+    print("-> True.")
 else:
-    print("Sorry. You must enter another word.")
+    print("-> False.")
