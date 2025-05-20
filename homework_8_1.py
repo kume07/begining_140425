@@ -1,4 +1,4 @@
-def add_one(some_list):
+def add_one(some_list: list[int]) -> list[int]:
     number = int("".join(str(x) for x in some_list))
     number += 1
 
