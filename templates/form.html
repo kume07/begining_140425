@@ -1,0 +1,32 @@
+<!-- templates/form.html -->
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Додати дохід</title>
+</head>
+<body>
+    <h2>Додати дохід</h2>
+    <form method="post">
+        <label>Сума:</label><br>
+        <input type="number" name="amount" step="0.01" required><br><br>
+
+        <label>Дата (YYYY-MM-DD):</label><br>
+        <input type="date" name="date" required><br><br>
+
+        <label>Тип доходу:</label><br>
+        <select name="source">
+            <option value="salary">Зарплата</option>
+            <option value="pension">Пенсія</option>
+        </select><br><br>
+
+        <label>
+            <input type="checkbox" name="to_card"> Нарахувати на картку (тільки для зарплати)
+        </label><br><br>
+
+        <button type="submit">Додати</button>
+    </form>
+    <br>
+    <a href="/">← Повернутись</a>
+</body>
+</html>
