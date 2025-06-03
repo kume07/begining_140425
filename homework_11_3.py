@@ -1,4 +1,4 @@
-def is_even(number):
+def is_even(number) -> bool:
     return (number & 1) == 0
 
 
